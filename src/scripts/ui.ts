@@ -18,23 +18,23 @@ declare type named_item = {name: string};
 declare type named_item_dict = {[key: string]: named_item};
 
 const datamapped = {
-    "raw_resources": {} as named_item_dict,
-    "ingots": {} as named_item_dict,
-    "constructables": {} as named_item_dict,
-    "assemblerables": {} as named_item_dict,
-    "manufacturerables": {} as named_item_dict,
-    "refineables": {} as named_item_dict,
-    "handcraftables": {} as named_item_dict,
+	"raw_resources": {} as named_item_dict,
+	"ingots": {} as named_item_dict,
+	"constructables": {} as named_item_dict,
+	"assemblerables": {} as named_item_dict,
+	"manufacturerables": {} as named_item_dict,
+	"refineables": {} as named_item_dict,
+	"handcraftables": {} as named_item_dict,
 };
 
 const datamappedlabels = {
-    "raw_resources": "Raw Resources",
-    "ingots": "Ingots",
-    "constructables": "Constructables",
-    "assemblerables": "Assemblerables",
-    "manufacturerables": "Manufacturerables",
-    "refineables": "Refineables",
-    "handcraftables": "Handcraftables"
+	"raw_resources": "Raw Resources",
+	"ingots": "Ingots",
+	"constructables": "Constructables",
+	"assemblerables": "Assemblerables",
+	"manufacturerables": "Manufacturerables",
+	"refineables": "Refineables",
+	"handcraftables": "Handcraftables"
 };
 
 (Object.keys(datamapped) as ('raw_resources'|'ingots'|'constructables'|'assemblerables'|'manufacturerables'|'refineables'|'handcraftables')[]).forEach((category) => {

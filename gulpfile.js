@@ -42,120 +42,120 @@ const postcss_config = () => {
 };
 
 function automate_listed(cb) {
-    const datasource = Object.entries(require(
-        './third-party/satisfactory-tools/data/data.json'
-    ).recipes).filter((entry) => {
-        const [_id, value] = entry;
+	const datasource = Object.entries(require(
+		'./third-party/satisfactory-tools/data/data.json'
+	).recipes).filter((entry) => {
+		const [_id, value] = entry;
 
-        return (
-            Object.keys(value).includes('producedIn')
-            && value.producedIn instanceof Array
+		return (
+			Object.keys(value).includes('producedIn')
+			&& value.producedIn instanceof Array
 			&& 1 === value.producedIn.length
 			&& (
 				! Object.keys(value).includes('alternate')
 				|| ! value.alternate
 			)
-        );
-    });
+		);
+	});
 
-    const data = require('./src/manual.json');
+	const data = require('./src/manual.json');
 
-    datasource.forEach((entry) => {
-        const [id, value] = entry;
+	datasource.forEach((entry) => {
+		const [id, value] = entry;
 
-        let target = [];
+		let target = [];
 
-        if (value.producedIn.includes('Desc_AssemblerMk1_C')) {
-            target = data.assemblerables;
-        } else if (value.producedIn.includes('Desc_ManufacturerMk1_C')) {
-            target = data.manufacturerables;
-        } else if (value.producedIn.includes('Desc_ConstructorMk1_C')) {
-            target = data.constructables;
-        } else if (value.producedIn.includes('Desc_OilRefinery_C')) {
-            target = data.refineables;
-        } else if (
-            value.producedIn.includes('Desc_FoundryMk1_C')
-            || value.producedIn.includes('Desc_SmelterMk1_C')
-        ) {
-            target = data.ingots;
-        }
+		if (value.producedIn.includes('Desc_AssemblerMk1_C')) {
+			target = data.assemblerables;
+		} else if (value.producedIn.includes('Desc_ManufacturerMk1_C')) {
+			target = data.manufacturerables;
+		} else if (value.producedIn.includes('Desc_ConstructorMk1_C')) {
+			target = data.constructables;
+		} else if (value.producedIn.includes('Desc_OilRefinery_C')) {
+			target = data.refineables;
+		} else if (
+			value.producedIn.includes('Desc_FoundryMk1_C')
+			|| value.producedIn.includes('Desc_SmelterMk1_C')
+		) {
+			target = data.ingots;
+		}
 
-        if (Object.keys(value).includes('products')) {
-            value.products.forEach((product) => {
-                if ( ! target.includes(product.item)) {
-                    target.push(product.item);
-                }
-            });
-        }
-    });
+		if (Object.keys(value).includes('products')) {
+			value.products.forEach((product) => {
+				if ( ! target.includes(product.item)) {
+					target.push(product.item);
+				}
+			});
+		}
+	});
 
-    fs.writeFileSync(
-        './src/data.json',
-        JSON.stringify(
-            Object.fromEntries(Object.entries(data).map((entry) => {
-                const [id, values] = entry;
+	fs.writeFileSync(
+		'./src/data.json',
+		JSON.stringify(
+			Object.fromEntries(Object.entries(data).map((entry) => {
+				const [id, values] = entry;
 
-                values.sort();
+				values.sort();
 
-                return [id, values];
-            })),
-            null,
-            '\t'
-        )
-    );
+				return [id, values];
+			})),
+			null,
+			'\t'
+		)
+	);
 
-    cb();
+	cb();
 };
 
 function unlisted(cb) {
-    const listed = Object.values(require('./src/data.json')).reduce(
-        (prev, current) => {
-            current.forEach((id) => {
-                if ( ! prev.includes(id)) {
-                    prev.push(id);
-                }
-            });
+	const listed = Object.values(require('./src/data.json')).reduce(
+		(prev, current) => {
+			current.forEach((id) => {
+				if ( ! prev.includes(id)) {
+					prev.push(id);
+				}
+			});
 
-            return prev;
-        },
-        []
-    );
+			return prev;
+		},
+		[]
+	);
 	const excluded = require('./src/excluded.json');
 
 	const datasource = require(
-        './third-party/satisfactory-tools/data/data.json'
-    );
+		'./third-party/satisfactory-tools/data/data.json'
+	);
 
-    const recipes = datasource.recipes;
+	const recipes = datasource.recipes;
 
-    const ingredients = Object.entries(recipes).reduce(
-        (prev, entry) => {
-            const [id, value] = entry;
+	const ingredients = Object.entries(recipes).reduce(
+		(prev, entry) => {
+			const [id, value] = entry;
 
-            if (Object.keys(value).includes('ingredients')) {
-                value.ingredients.forEach((ingredient) => {
-                    if ( ! prev.includes(ingredient.item)) {
-                        prev.push(ingredient.item);
-                    }
-                });
-            }
+			if (Object.keys(value).includes('ingredients')) {
+				value.ingredients.forEach((ingredient) => {
+					if ( ! prev.includes(ingredient.item)) {
+						prev.push(ingredient.item);
+					}
+				});
+			}
 
-            return prev;
-        },
-        []
-    ).filter((id) => {
-        return ! excluded.includes(id);
-    });
+			return prev;
+		},
+		[]
+	).filter((id) => {
+		return ! excluded.includes(id);
+	});
 
-    const unlisted_filter = (id) => {
-        return ! listed.includes(id) && ! excluded.includes(id);
-    };
+	const unlisted_filter = (id) => {
+		return ! listed.includes(id) && ! excluded.includes(id);
+	};
 
-    const unlisted = Object.keys(datasource.items).concat(ingredients).filter(unlisted_filter);
+	const unlisted = Object.keys(datasource.items).concat(ingredients).filter(unlisted_filter);
 
-    console.log(`${unlisted.length} items unlisted:\n ${unlisted.join('\n')}`);
+	console.log(`${unlisted.length} items unlisted:\n ${unlisted.join('\n')}`);
 
-    cb();
+	cb();
 };
 
 async function js_load(cb) {
