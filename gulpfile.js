@@ -53,7 +53,17 @@ exports.automate_listed = (cb) => {
 
     fs.writeFileSync(
         './src/data.json',
-        JSON.stringify(data, null, '\t')
+        JSON.stringify(
+            Object.fromEntries(Object.entries(data).map((entry) => {
+                const [id, values] = entry;
+
+                values.sort();
+
+                return [id, values];
+            })),
+            null,
+            '\t'
+        )
     );
 
     cb();
