@@ -1,6 +1,47 @@
 const fs = require('fs');
+const rollup = require('rollup');
+const {
+	src,
+	dest,
+	series,
+	parallel,
+} = require('gulp');
+const newer = require('gulp-newer');
+const uglify = require('gulp-uglify-es').default;
+const rename = require('gulp-rename');
+const postcss = require('gulp-postcss');
 
-exports.automate_listed = (cb) => {
+const rollupPlugins = {
+	commonjs: require('@rollup/plugin-commonjs'),
+	nodeResolve: require('@rollup/plugin-node-resolve').default,
+	jsonResolve: require('@rollup/plugin-json'),
+	typescript: require('@rollup/plugin-typescript'),
+	minifyHtml: require('rollup-plugin-minify-html-literals').default,
+};
+
+const postcss_plugins = {
+	nested: require('postcss-nested'),
+	calc: require('postcss-nested'),
+	font_family_system_ui: require('postcss-font-family-system-ui'),
+	system_monospace: require('postcss-system-monospace'),
+	cssnano: require('cssnano'),
+	import: require('postcss-import'),
+};
+
+const postcss_config = () => {
+	return postcss([
+		postcss_plugins.import(),
+		postcss_plugins.nested(),
+		postcss_plugins.calc(),
+		postcss_plugins.font_family_system_ui(),
+		postcss_plugins.system_monospace(),
+		postcss_plugins.cssnano({
+			cssDeclarationSorter: 'concentric-css',
+		}),
+	]);
+};
+
+function automate_listed(cb) {
     const datasource = Object.entries(require(
         './third-party/satisfactory-tools/data/data.json'
     ).recipes).filter((entry) => {
@@ -9,7 +50,11 @@ exports.automate_listed = (cb) => {
         return (
             Object.keys(value).includes('producedIn')
             && value.producedIn instanceof Array
-            && 1 === value.producedIn.length
+			&& 1 === value.producedIn.length
+			&& (
+				! Object.keys(value).includes('alternate')
+				|| ! value.alternate
+			)
         );
     });
 
@@ -34,8 +79,6 @@ exports.automate_listed = (cb) => {
         ) {
             target = data.ingots;
         }
-
-        target.push(id);
 
         if (Object.keys(value).includes('products')) {
             value.products.forEach((product) => {
@@ -64,7 +107,7 @@ exports.automate_listed = (cb) => {
     cb();
 };
 
-exports.unlisted = (cb) => {
+function unlisted(cb) {
     const listed = Object.values(require('./src/data.json')).reduce(
         (prev, current) => {
             current.forEach((id) => {
@@ -77,13 +120,13 @@ exports.unlisted = (cb) => {
         },
         []
     );
-    const excluded = require('./src/excluded.json');
+	const excluded = require('./src/excluded.json');
 
-    const recipes = require(
+	const datasource = require(
         './third-party/satisfactory-tools/data/data.json'
-    ).recipes;
+    );
 
-    const datasource = Object.keys(recipes);
+    const recipes = datasource.recipes;
 
     const ingredients = Object.entries(recipes).reduce(
         (prev, entry) => {
@@ -108,9 +151,64 @@ exports.unlisted = (cb) => {
         return ! listed.includes(id) && ! excluded.includes(id);
     };
 
-    const unlisted = datasource.concat(ingredients).filter(unlisted_filter);
+    const unlisted = Object.keys(datasource.items).concat(ingredients).filter(unlisted_filter);
 
     console.log(`${unlisted.length} items unlisted:\n ${unlisted.join('\n')}`);
 
     cb();
 };
+
+async function js_load(cb) {
+	const bundle = await rollup.rollup({
+		input: './src/scripts/load.ts',
+		plugins: [
+			rollupPlugins.nodeResolve(),
+			rollupPlugins.jsonResolve(),
+			rollupPlugins.typescript({
+				tsconfig: './tsconfig.json',
+				outDir: './tmp/scripts/',
+			}),
+			rollupPlugins.minifyHtml(),
+		],
+	});
+
+	await bundle.write({
+		sourcemap: false,
+		format: 'es',
+		dir: './tmp/scripts/',
+	});
+
+	cb();
+};
+
+function task_uglify() {
+	return src('./tmp/scripts/**/*.js').pipe(
+		newer('./src/scripts/')
+	).pipe(
+		uglify({
+			module: true,
+		})
+	).pipe(dest('./src/scripts/'));
+};
+
+function task_postcss() {
+	return src('./src/css/**/*.postcss').pipe(
+		postcss_config()
+	).pipe(
+		rename({extname: '.css'})
+	).pipe(dest('./src/css/'));
+};
+
+exports.automate_listed = automate_listed;
+exports.unlisted = unlisted;
+exports.js_load = js_load;
+exports.uglify = task_uglify;
+exports.postcss = task_postcss;
+
+exports.default = series(...[
+	parallel(...[
+		js_load,
+		task_postcss,
+	]),
+	task_uglify,
+]);

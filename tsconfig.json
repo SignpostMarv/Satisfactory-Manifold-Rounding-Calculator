@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"declaration": false,
+		"declarationMap": false,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"esnext"
+		],
+		"plugins": [
+			{
+				"name": "typescript-lit-html-plugin"
+			}
+		],
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"newLine": "lf",
+		"noEmitOnError": true,
+		"noErrorTruncation": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strict": true,
+		"rootDir": "./",
+		"outDir": "./dist/",
+		"resolveJsonModule": true,
+		"target": "ESNext"
+	},
+	"exclude": [
+		"./src/**/*.worker.ts",
+		"./third-party/satisfactory-tools/bin/",
+		"./third-party/satisfactory-tools/src/"
+	]
+}
