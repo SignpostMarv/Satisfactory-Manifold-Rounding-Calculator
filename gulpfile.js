@@ -13,20 +13,7 @@ exports.automate_listed = (cb) => {
         );
     });
 
-    const data = {
-        raw_resources: [
-        ],
-        ingots: [
-        ],
-        constructables: [
-        ],
-        assemblerables: [
-        ],
-        manufacturerables: [
-        ],
-        refineables: [
-        ]
-    };
+    const data = require('./src/manual.json');
 
     datasource.forEach((entry) => {
         const [id, value] = entry;
@@ -49,6 +36,14 @@ exports.automate_listed = (cb) => {
         }
 
         target.push(id);
+
+        if (Object.keys(value).includes('products')) {
+            value.products.forEach((product) => {
+                if ( ! target.includes(product.item)) {
+                    target.push(product.item);
+                }
+            });
+        }
     });
 
     fs.writeFileSync(
@@ -84,13 +79,36 @@ exports.unlisted = (cb) => {
     );
     const excluded = require('./src/excluded.json');
 
-    const datasource = Object.keys((require(
+    const recipes = require(
         './third-party/satisfactory-tools/data/data.json'
-    )).recipes);
+    ).recipes;
 
-    const unlisted = datasource.filter((id) => {
-        return ! listed.includes(id) && ! excluded.includes(id);
+    const datasource = Object.keys(recipes);
+
+    const ingredients = Object.entries(recipes).reduce(
+        (prev, entry) => {
+            const [id, value] = entry;
+
+            if (Object.keys(value).includes('ingredients')) {
+                value.ingredients.forEach((ingredient) => {
+                    if ( ! prev.includes(ingredient.item)) {
+                        prev.push(ingredient.item);
+                    }
+                });
+            }
+
+            return prev;
+        },
+        []
+    ).filter((id) => {
+        return ! excluded.includes(id);
     });
+
+    const unlisted_filter = (id) => {
+        return ! listed.includes(id) && ! excluded.includes(id);
+    };
+
+    const unlisted = datasource.concat(ingredients).filter(unlisted_filter);
 
     console.log(`${unlisted.length} items unlisted:\n ${unlisted.join('\n')}`);
 

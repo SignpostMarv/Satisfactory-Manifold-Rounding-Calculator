@@ -161,5 +161,12 @@
     "Recipe_WorkBench_C",
     "Recipe_Workshop_C",
     "Recipe_XenoBasher_C",
-    "Recipe_XenoZapper_C"
+    "Recipe_XenoZapper_C",
+    "BP_ItemDescriptorPortableMiner_C",
+    "BP_EquipmentDescriptorObjectScanner_C",
+    "Desc_Crystal_C",
+    "Desc_Crystal_mk2_C",
+    "Desc_Crystal_mk3_C",
+    "Desc_HUBParts_C",
+    "BP_EquipmentDescriptorShockShank_C"
 ]
