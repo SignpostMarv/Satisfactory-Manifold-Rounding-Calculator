@@ -1,0 +1,3 @@
+[submodule "third-party/satisfactory-tools"]
+	path = third-party/satisfactory-tools
+	url = https://github.com/greeny/SatisfactoryTools.git
