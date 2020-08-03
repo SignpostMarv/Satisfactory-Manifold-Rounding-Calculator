@@ -1,0 +1,1809 @@
+{
+	"defaults": {
+		"Desc_GenericBiomass_C": "Recipe_Biomass_Leaves_C",
+		"Desc_HeavyOilResidue_C": "Recipe_Rubber_C",
+		"Desc_CrystalShard_C": "Recipe_PowerCrystalShard_1_C",
+		"Desc_CopperSheet_C": "Recipe_CopperSheet_C",
+		"Desc_HighSpeedWire_C": "Recipe_Quickwire_C",
+		"Desc_CircuitBoardHighSpeed_C": "Recipe_AILimiter_C",
+		"Desc_IronPlate_C": "Recipe_IronPlate_C",
+		"Desc_Rubber_C": "Recipe_Rubber_C",
+		"Desc_IronPlateReinforced_C": "Recipe_IronPlateReinforced_C",
+		"Desc_SteelPlate_C": "Recipe_SteelBeam_C",
+		"Desc_SteelPipe_C": "Recipe_SteelPipe_C",
+		"Desc_CrystalOscillator_C": "Recipe_CrystalOscillator_C",
+		"BP_EquipmentDescriptorBeacon_C": "Recipe_Beacon_C",
+		"Desc_IronScrew_C": "Recipe_Screw_C",
+		"Desc_ModularFrame_C": "Recipe_ModularFrame_C",
+		"Desc_Wire_C": "Recipe_Wire_C",
+		"Desc_Cable_C": "Recipe_Cable_C",
+		"Desc_Silica_C": "Recipe_Silica_C",
+		"Desc_CircuitBoard_C": "Recipe_CircuitBoard_C",
+		"Desc_Plastic_C": "Recipe_Plastic_C",
+		"Desc_IronIngot_C": "Recipe_IngotIron_C",
+		"Desc_PetroleumCoke_C": "Recipe_PetroleumCoke_C",
+		"Desc_SteelIngot_C": "Recipe_IngotSteel_C",
+		"Desc_Computer_C": "Recipe_Computer_C",
+		"Desc_Cement_C": "Recipe_Concrete_C",
+		"Desc_CopperIngot_C": "Recipe_IngotCopper_C",
+		"Desc_Rotor_C": "Recipe_Rotor_C",
+		"Desc_QuartzCrystal_C": "Recipe_QuartzCrystal_C",
+		"Desc_PackagedWater_C": "Recipe_PackagedWater_C",
+		"Desc_Fuel_C": "Recipe_Fuel_C",
+		"Desc_AluminaSolution_C": "Recipe_AluminaSolution_C",
+		"Desc_AluminumScrap_C": "Recipe_AluminumScrap_C",
+		"Desc_Stator_C": "Recipe_Stator_C",
+		"Desc_HighSpeedConnector_C": "Recipe_HighSpeedConnector_C",
+		"Desc_ElectromagneticControlRod_C": "Recipe_ElectromagneticControlRod_C",
+		"Desc_SteelPlateReinforced_C": "Recipe_EncasedIndustrialBeam_C",
+		"Desc_CompactedCoal_C": "Recipe_Alternate_EnrichedCoal_C",
+		"Desc_SpaceElevatorPart_2_C": "Recipe_SpaceElevatorPart_2_C",
+		"Desc_GoldIngot_C": "Recipe_IngotCaterium_C",
+		"Desc_Gunpowder_C": "Recipe_Gunpowder_C",
+		"Desc_AluminumPlate_C": "Recipe_AluminumSheet_C",
+		"Desc_AluminumPlateReinforced_C": "Recipe_HeatSink_C",
+		"Desc_ModularFrameHeavy_C": "Recipe_ModularFrameHeavy_C",
+		"Desc_LiquidOil_C": "Recipe_UnpackageOil_C",
+		"Desc_PolymerResin_C": "Recipe_LiquidFuel_C",
+		"Desc_SpaceElevatorPart_3_C": "Recipe_SpaceElevatorPart_3_C",
+		"Desc_Motor_C": "Recipe_Motor_C",
+		"Desc_NobeliskExplosive_C": "Recipe_Nobelisk_C",
+		"Desc_UraniumCell_C": "Recipe_UraniumCell_C",
+		"Desc_NuclearFuelRod_C": "Recipe_NuclearFuelRod_C",
+		"Desc_SpaceElevatorPart_1_C": "Recipe_SpaceElevatorPart_1_C",
+		"Desc_LiquidFuel_C": "Recipe_ResidualFuel_C",
+		"Desc_Fabric_C": "Recipe_Fabric_C",
+		"Desc_ComputerSuper_C": "Recipe_ComputerSuper_C",
+		"Desc_ModularFrameLightweight_C": "Recipe_RadioControlUnit_C",
+		"Desc_IronRod_C": "Recipe_IronRod_C",
+		"Desc_LiquidTurboFuel_C": "Recipe_UnpackageTurboFuel_C",
+		"Desc_MotorLightweight_C": "Recipe_MotorTurbo_C",
+		"Desc_UraniumPellet_C": "Recipe_UraniumPellet_C",
+		"Desc_AluminumIngot_C": "Recipe_IngotAluminum_C",
+		"Desc_Battery_C": "Recipe_Battery_C",
+		"Desc_Biofuel_C": "Recipe_Biofuel_C",
+		"Desc_CartridgeStandard_C": "Recipe_Cartridge_C",
+		"Desc_ColorCartridge_C": "Recipe_ColorCartridge_C",
+		"Desc_Filter_C": "Recipe_FilterGasMask_C",
+		"Desc_HazmatFilter_C": "Recipe_FilterHazmat_C",
+		"Desc_FluidCanister_C": "Recipe_FluidCanister_C",
+		"Desc_LiquidBiofuel_C": "Recipe_LiquidBiofuel_C",
+		"Desc_PackagedBiofuel_C": "Recipe_PackagedBiofuel_C",
+		"Desc_PackagedOil_C": "Recipe_PackagedCrudeOil_C",
+		"Desc_PackagedOilResidue_C": "Recipe_PackagedOilResidue_C",
+		"Desc_TurboFuel_C": "Recipe_PackagedTurboFuel_C",
+		"Desc_SpaceElevatorPart_4_C": "Recipe_SpaceElevatorPart_4_C",
+		"Desc_SpaceElevatorPart_5_C": "Recipe_SpaceElevatorPart_5_C",
+		"Desc_SpikedRebar_C": "Recipe_SpikedRebar_C",
+		"Desc_SulfuricAcid_C": "Recipe_SulfuricAcid_C"
+	},
+	"data": {
+		"Desc_CopperSheet_C": {
+			"Recipe_Alternate_SteamedCopperSheet_C": {
+				"uses": [
+					"Desc_CopperIngot_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_CopperSheet_C"
+				]
+			},
+			"Recipe_CopperSheet_C": {
+				"uses": [
+					"Desc_CopperIngot_C"
+				],
+				"produces": [
+					"Desc_CopperSheet_C"
+				]
+			}
+		},
+		"Desc_HighSpeedWire_C": {
+			"Recipe_Alternate_Quickwire_C": {
+				"uses": [
+					"Desc_GoldIngot_C",
+					"Desc_CopperIngot_C"
+				],
+				"produces": [
+					"Desc_HighSpeedWire_C"
+				]
+			},
+			"Recipe_Quickwire_C": {
+				"uses": [
+					"Desc_GoldIngot_C"
+				],
+				"produces": [
+					"Desc_HighSpeedWire_C"
+				]
+			}
+		},
+		"Desc_CircuitBoardHighSpeed_C": {
+			"Recipe_AILimiter_C": {
+				"uses": [
+					"Desc_CopperSheet_C",
+					"Desc_HighSpeedWire_C"
+				],
+				"produces": [
+					"Desc_CircuitBoardHighSpeed_C"
+				]
+			}
+		},
+		"Desc_IronPlate_C": {
+			"Recipe_Alternate_CoatedIronPlate_C": {
+				"uses": [
+					"Desc_IronIngot_C",
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_IronPlate_C"
+				]
+			},
+			"Recipe_Alternate_SteelCoatedPlate_C": {
+				"uses": [
+					"Desc_SteelIngot_C",
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_IronPlate_C"
+				]
+			},
+			"Recipe_IronPlate_C": {
+				"uses": [
+					"Desc_IronIngot_C"
+				],
+				"produces": [
+					"Desc_IronPlate_C"
+				]
+			}
+		},
+		"Desc_Rubber_C": {
+			"Recipe_Alternate_RecycledRubber_C": {
+				"uses": [
+					"Desc_Plastic_C",
+					"Desc_LiquidFuel_C"
+				],
+				"produces": [
+					"Desc_Rubber_C"
+				]
+			},
+			"Recipe_ResidualRubber_C": {
+				"uses": [
+					"Desc_PolymerResin_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_Rubber_C"
+				]
+			},
+			"Recipe_Rubber_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_Rubber_C",
+					"Desc_HeavyOilResidue_C"
+				]
+			}
+		},
+		"Desc_IronPlateReinforced_C": {
+			"Recipe_Alternate_AdheredIronPlate_C": {
+				"uses": [
+					"Desc_IronPlate_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_IronPlateReinforced_C"
+				]
+			},
+			"Recipe_Alternate_ReinforcedIronPlate_1_C": {
+				"uses": [
+					"Desc_IronPlate_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_IronPlateReinforced_C"
+				]
+			},
+			"Recipe_Alternate_ReinforcedIronPlate_2_C": {
+				"uses": [
+					"Desc_IronPlate_C",
+					"Desc_Wire_C"
+				],
+				"produces": [
+					"Desc_IronPlateReinforced_C"
+				]
+			},
+			"Recipe_IronPlateReinforced_C": {
+				"uses": [
+					"Desc_IronPlate_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_IronPlateReinforced_C"
+				]
+			}
+		},
+		"Desc_SteelPlate_C": {
+			"Recipe_SteelBeam_C": {
+				"uses": [
+					"Desc_SteelIngot_C"
+				],
+				"produces": [
+					"Desc_SteelPlate_C"
+				]
+			}
+		},
+		"Desc_SteelPipe_C": {
+			"Recipe_SteelPipe_C": {
+				"uses": [
+					"Desc_SteelIngot_C"
+				],
+				"produces": [
+					"Desc_SteelPipe_C"
+				]
+			}
+		},
+		"Desc_CrystalOscillator_C": {
+			"Recipe_Alternate_CrystalOscillator_C": {
+				"uses": [
+					"Desc_QuartzCrystal_C",
+					"Desc_Rubber_C",
+					"Desc_CircuitBoardHighSpeed_C"
+				],
+				"produces": [
+					"Desc_CrystalOscillator_C"
+				]
+			},
+			"Recipe_CrystalOscillator_C": {
+				"uses": [
+					"Desc_QuartzCrystal_C",
+					"Desc_Cable_C",
+					"Desc_IronPlateReinforced_C"
+				],
+				"produces": [
+					"Desc_CrystalOscillator_C"
+				]
+			}
+		},
+		"BP_EquipmentDescriptorBeacon_C": {
+			"Recipe_Alternate_Beacon_1_C": {
+				"uses": [
+					"Desc_SteelPlate_C",
+					"Desc_SteelPipe_C",
+					"Desc_CrystalOscillator_C"
+				],
+				"produces": [
+					"BP_EquipmentDescriptorBeacon_C"
+				]
+			},
+			"Recipe_Beacon_C": {
+				"uses": [
+					"Desc_IronPlate_C",
+					"Desc_IronRod_C",
+					"Desc_Wire_C",
+					"Desc_Cable_C"
+				],
+				"produces": [
+					"BP_EquipmentDescriptorBeacon_C"
+				]
+			}
+		},
+		"Desc_IronScrew_C": {
+			"Recipe_Alternate_Screw_2_C": {
+				"uses": [
+					"Desc_SteelPlate_C"
+				],
+				"produces": [
+					"Desc_IronScrew_C"
+				]
+			},
+			"Recipe_Alternate_Screw_C": {
+				"uses": [
+					"Desc_IronIngot_C"
+				],
+				"produces": [
+					"Desc_IronScrew_C"
+				]
+			},
+			"Recipe_Screw_C": {
+				"uses": [
+					"Desc_IronRod_C"
+				],
+				"produces": [
+					"Desc_IronScrew_C"
+				]
+			}
+		},
+		"Desc_ModularFrame_C": {
+			"Recipe_Alternate_BoltedFrame_C": {
+				"uses": [
+					"Desc_IronPlateReinforced_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_ModularFrame_C"
+				]
+			},
+			"Recipe_Alternate_ModularFrame_C": {
+				"uses": [
+					"Desc_IronPlateReinforced_C",
+					"Desc_SteelPipe_C"
+				],
+				"produces": [
+					"Desc_ModularFrame_C"
+				]
+			},
+			"Recipe_ModularFrame_C": {
+				"uses": [
+					"Desc_IronPlateReinforced_C",
+					"Desc_IronRod_C"
+				],
+				"produces": [
+					"Desc_ModularFrame_C"
+				]
+			}
+		},
+		"Desc_Wire_C": {
+			"Recipe_Alternate_FusedWire_C": {
+				"uses": [
+					"Desc_CopperIngot_C",
+					"Desc_GoldIngot_C"
+				],
+				"produces": [
+					"Desc_Wire_C"
+				]
+			},
+			"Recipe_Alternate_Wire_1_C": {
+				"uses": [
+					"Desc_IronIngot_C"
+				],
+				"produces": [
+					"Desc_Wire_C"
+				]
+			},
+			"Recipe_Alternate_Wire_2_C": {
+				"uses": [
+					"Desc_GoldIngot_C"
+				],
+				"produces": [
+					"Desc_Wire_C"
+				]
+			},
+			"Recipe_Wire_C": {
+				"uses": [
+					"Desc_CopperIngot_C"
+				],
+				"produces": [
+					"Desc_Wire_C"
+				]
+			}
+		},
+		"Desc_Cable_C": {
+			"Recipe_Alternate_Cable_1_C": {
+				"uses": [
+					"Desc_Wire_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_Cable_C"
+				]
+			},
+			"Recipe_Alternate_Cable_2_C": {
+				"uses": [
+					"Desc_HighSpeedWire_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_Cable_C"
+				]
+			},
+			"Recipe_Alternate_CoatedCable_C": {
+				"uses": [
+					"Desc_Wire_C",
+					"Desc_HeavyOilResidue_C"
+				],
+				"produces": [
+					"Desc_Cable_C"
+				]
+			},
+			"Recipe_Cable_C": {
+				"uses": [
+					"Desc_Wire_C"
+				],
+				"produces": [
+					"Desc_Cable_C"
+				]
+			}
+		},
+		"Desc_Silica_C": {
+			"Recipe_Alternate_Silica_C": {
+				"uses": [
+					"Desc_RawQuartz_C",
+					"Desc_Stone_C"
+				],
+				"produces": [
+					"Desc_Silica_C"
+				]
+			},
+			"Recipe_AluminaSolution_C": {
+				"uses": [
+					"Desc_OreBauxite_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_AluminaSolution_C",
+					"Desc_Silica_C"
+				]
+			},
+			"Recipe_Silica_C": {
+				"uses": [
+					"Desc_RawQuartz_C"
+				],
+				"produces": [
+					"Desc_Silica_C"
+				]
+			}
+		},
+		"Desc_CircuitBoard_C": {
+			"Recipe_Alternate_CircuitBoard_1_C": {
+				"uses": [
+					"Desc_CopperSheet_C",
+					"Desc_Silica_C"
+				],
+				"produces": [
+					"Desc_CircuitBoard_C"
+				]
+			},
+			"Recipe_Alternate_CircuitBoard_2_C": {
+				"uses": [
+					"Desc_Plastic_C",
+					"Desc_HighSpeedWire_C"
+				],
+				"produces": [
+					"Desc_CircuitBoard_C"
+				]
+			},
+			"Recipe_Alternate_ElectrodeCircuitBoard_C": {
+				"uses": [
+					"Desc_Rubber_C",
+					"Desc_PetroleumCoke_C"
+				],
+				"produces": [
+					"Desc_CircuitBoard_C"
+				]
+			},
+			"Recipe_CircuitBoard_C": {
+				"uses": [
+					"Desc_CopperSheet_C",
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_CircuitBoard_C"
+				]
+			}
+		},
+		"Desc_Plastic_C": {
+			"Recipe_Alternate_Plastic_1_C": {
+				"uses": [
+					"Desc_Rubber_C",
+					"Desc_LiquidFuel_C"
+				],
+				"produces": [
+					"Desc_Plastic_C"
+				]
+			},
+			"Recipe_Plastic_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_Plastic_C",
+					"Desc_HeavyOilResidue_C"
+				]
+			},
+			"Recipe_ResidualPlastic_C": {
+				"uses": [
+					"Desc_PolymerResin_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_Plastic_C"
+				]
+			}
+		},
+		"Desc_Wood_C": {},
+		"Desc_Coal_C": {
+			"Recipe_Alternate_Coal_1_C": {
+				"uses": [
+					"Desc_Wood_C"
+				],
+				"produces": [
+					"Desc_Coal_C"
+				]
+			},
+			"Recipe_Alternate_Coal_2_C": {
+				"uses": [
+					"Desc_GenericBiomass_C"
+				],
+				"produces": [
+					"Desc_Coal_C"
+				]
+			}
+		},
+		"Desc_GenericBiomass_C": {
+			"Recipe_Biomass_AlienCarapace_C": {
+				"uses": [
+					"Desc_HogParts_C"
+				],
+				"produces": [
+					"Desc_GenericBiomass_C"
+				]
+			},
+			"Recipe_Biomass_AlienOrgans_C": {
+				"uses": [
+					"Desc_SpitterParts_C"
+				],
+				"produces": [
+					"Desc_GenericBiomass_C"
+				]
+			},
+			"Recipe_Biomass_Leaves_C": {
+				"uses": [
+					"Desc_Leaves_C"
+				],
+				"produces": [
+					"Desc_GenericBiomass_C"
+				]
+			},
+			"Recipe_Biomass_Mycelia_C": {
+				"uses": [
+					"Desc_Mycelia_C"
+				],
+				"produces": [
+					"Desc_GenericBiomass_C"
+				]
+			},
+			"Recipe_Biomass_Wood_C": {
+				"uses": [
+					"Desc_Wood_C"
+				],
+				"produces": [
+					"Desc_GenericBiomass_C"
+				]
+			}
+		},
+		"Desc_HeavyOilResidue_C": {
+			"Recipe_Alternate_HeavyOilResidue_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_PolymerResin_C"
+				]
+			},
+			"Recipe_Alternate_PolymerResin_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_PolymerResin_C",
+					"Desc_HeavyOilResidue_C"
+				]
+			},
+			"Recipe_Plastic_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_Plastic_C",
+					"Desc_HeavyOilResidue_C"
+				]
+			},
+			"Recipe_Rubber_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_Rubber_C",
+					"Desc_HeavyOilResidue_C"
+				]
+			},
+			"Recipe_UnpackageOilResidue_C": {
+				"uses": [
+					"Desc_PackagedOilResidue_C"
+				],
+				"produces": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_IronIngot_C": {
+			"Recipe_Alternate_IngotIron_C": {
+				"uses": [
+					"Desc_OreIron_C",
+					"Desc_OreCopper_C"
+				],
+				"produces": [
+					"Desc_IronIngot_C"
+				]
+			},
+			"Recipe_Alternate_PureIronIngot_C": {
+				"uses": [
+					"Desc_OreIron_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_IronIngot_C"
+				]
+			},
+			"Recipe_IngotIron_C": {
+				"uses": [
+					"Desc_OreIron_C"
+				],
+				"produces": [
+					"Desc_IronIngot_C"
+				]
+			}
+		},
+		"Desc_OreIron_C": {},
+		"Desc_PetroleumCoke_C": {
+			"Recipe_PetroleumCoke_C": {
+				"uses": [
+					"Desc_HeavyOilResidue_C"
+				],
+				"produces": [
+					"Desc_PetroleumCoke_C"
+				]
+			}
+		},
+		"Desc_SteelIngot_C": {
+			"Recipe_Alternate_CokeSteelIngot_C": {
+				"uses": [
+					"Desc_OreIron_C",
+					"Desc_PetroleumCoke_C"
+				],
+				"produces": [
+					"Desc_SteelIngot_C"
+				]
+			},
+			"Recipe_Alternate_IngotSteel_1_C": {
+				"uses": [
+					"Desc_IronIngot_C",
+					"Desc_Coal_C"
+				],
+				"produces": [
+					"Desc_SteelIngot_C"
+				]
+			},
+			"Recipe_Alternate_IngotSteel_2_C": {
+				"uses": [
+					"Desc_OreIron_C",
+					"Desc_CompactedCoal_C"
+				],
+				"produces": [
+					"Desc_SteelIngot_C"
+				]
+			},
+			"Recipe_IngotSteel_C": {
+				"uses": [
+					"Desc_OreIron_C",
+					"Desc_Coal_C"
+				],
+				"produces": [
+					"Desc_SteelIngot_C"
+				]
+			}
+		},
+		"Desc_Computer_C": {
+			"Recipe_Alternate_Computer_1_C": {
+				"uses": [
+					"Desc_CircuitBoard_C",
+					"Desc_HighSpeedWire_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_Computer_C"
+				]
+			},
+			"Recipe_Alternate_Computer_2_C": {
+				"uses": [
+					"Desc_CircuitBoard_C",
+					"Desc_CrystalOscillator_C"
+				],
+				"produces": [
+					"Desc_Computer_C"
+				]
+			},
+			"Recipe_Computer_C": {
+				"uses": [
+					"Desc_CircuitBoard_C",
+					"Desc_Cable_C",
+					"Desc_Plastic_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_Computer_C"
+				]
+			}
+		},
+		"Desc_Stone_C": {},
+		"Desc_Cement_C": {
+			"Recipe_Alternate_Concrete_C": {
+				"uses": [
+					"Desc_Silica_C",
+					"Desc_Stone_C"
+				],
+				"produces": [
+					"Desc_Cement_C"
+				]
+			},
+			"Recipe_Alternate_RubberConcrete_C": {
+				"uses": [
+					"Desc_Stone_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_Cement_C"
+				]
+			},
+			"Recipe_Alternate_WetConcrete_C": {
+				"uses": [
+					"Desc_Stone_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_Cement_C"
+				]
+			},
+			"Recipe_Concrete_C": {
+				"uses": [
+					"Desc_Stone_C"
+				],
+				"produces": [
+					"Desc_Cement_C"
+				]
+			}
+		},
+		"Desc_OreCopper_C": {},
+		"Desc_CopperIngot_C": {
+			"Recipe_Alternate_CopperAlloyIngot_C": {
+				"uses": [
+					"Desc_OreCopper_C",
+					"Desc_OreIron_C"
+				],
+				"produces": [
+					"Desc_CopperIngot_C"
+				]
+			},
+			"Recipe_Alternate_PureCopperIngot_C": {
+				"uses": [
+					"Desc_OreCopper_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_CopperIngot_C"
+				]
+			},
+			"Recipe_IngotCopper_C": {
+				"uses": [
+					"Desc_OreCopper_C"
+				],
+				"produces": [
+					"Desc_CopperIngot_C"
+				]
+			}
+		},
+		"Desc_Rotor_C": {
+			"Recipe_Alternate_CopperRotor_C": {
+				"uses": [
+					"Desc_CopperSheet_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_Rotor_C"
+				]
+			},
+			"Recipe_Alternate_Rotor_C": {
+				"uses": [
+					"Desc_SteelPipe_C",
+					"Desc_Wire_C"
+				],
+				"produces": [
+					"Desc_Rotor_C"
+				]
+			},
+			"Recipe_Rotor_C": {
+				"uses": [
+					"Desc_IronRod_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_Rotor_C"
+				]
+			}
+		},
+		"Desc_QuartzCrystal_C": {
+			"Recipe_Alternate_PureQuartzCrystal_C": {
+				"uses": [
+					"Desc_RawQuartz_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_QuartzCrystal_C"
+				]
+			},
+			"Recipe_QuartzCrystal_C": {
+				"uses": [
+					"Desc_RawQuartz_C"
+				],
+				"produces": [
+					"Desc_QuartzCrystal_C"
+				]
+			}
+		},
+		"Desc_PackagedWater_C": {
+			"Recipe_PackagedWater_C": {
+				"uses": [
+					"Desc_Water_C",
+					"Desc_FluidCanister_C"
+				],
+				"produces": [
+					"Desc_PackagedWater_C"
+				]
+			}
+		},
+		"Desc_Fuel_C": {
+			"Recipe_Alternate_DilutedPackagedFuel_C": {
+				"uses": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_PackagedWater_C"
+				],
+				"produces": [
+					"Desc_Fuel_C"
+				]
+			},
+			"Recipe_Fuel_C": {
+				"uses": [
+					"Desc_LiquidFuel_C",
+					"Desc_FluidCanister_C"
+				],
+				"produces": [
+					"Desc_Fuel_C"
+				]
+			}
+		},
+		"Desc_AluminaSolution_C": {
+			"Recipe_AluminaSolution_C": {
+				"uses": [
+					"Desc_OreBauxite_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_AluminaSolution_C",
+					"Desc_Silica_C"
+				]
+			}
+		},
+		"Desc_AluminumScrap_C": {
+			"Recipe_Alternate_ElectroAluminumScrap_C": {
+				"uses": [
+					"Desc_AluminaSolution_C",
+					"Desc_Coal_C"
+				],
+				"produces": [
+					"Desc_AluminumScrap_C",
+					"Desc_Water_C"
+				]
+			},
+			"Recipe_AluminumScrap_C": {
+				"uses": [
+					"Desc_AluminaSolution_C",
+					"Desc_PetroleumCoke_C"
+				],
+				"produces": [
+					"Desc_AluminumScrap_C",
+					"Desc_Water_C"
+				]
+			}
+		},
+		"Desc_Water_C": {
+			"Recipe_Alternate_ElectroAluminumScrap_C": {
+				"uses": [
+					"Desc_AluminaSolution_C",
+					"Desc_Coal_C"
+				],
+				"produces": [
+					"Desc_AluminumScrap_C",
+					"Desc_Water_C"
+				]
+			},
+			"Recipe_AluminumScrap_C": {
+				"uses": [
+					"Desc_AluminaSolution_C",
+					"Desc_PetroleumCoke_C"
+				],
+				"produces": [
+					"Desc_AluminumScrap_C",
+					"Desc_Water_C"
+				]
+			},
+			"Recipe_UnpackageWater_C": {
+				"uses": [
+					"Desc_PackagedWater_C"
+				],
+				"produces": [
+					"Desc_Water_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_Stator_C": {
+			"Recipe_Alternate_Stator_C": {
+				"uses": [
+					"Desc_SteelPipe_C",
+					"Desc_HighSpeedWire_C"
+				],
+				"produces": [
+					"Desc_Stator_C"
+				]
+			},
+			"Recipe_Stator_C": {
+				"uses": [
+					"Desc_SteelPipe_C",
+					"Desc_Wire_C"
+				],
+				"produces": [
+					"Desc_Stator_C"
+				]
+			}
+		},
+		"Desc_HighSpeedConnector_C": {
+			"Recipe_Alternate_HighSpeedConnector_C": {
+				"uses": [
+					"Desc_HighSpeedWire_C",
+					"Desc_Silica_C",
+					"Desc_CircuitBoard_C"
+				],
+				"produces": [
+					"Desc_HighSpeedConnector_C"
+				]
+			},
+			"Recipe_HighSpeedConnector_C": {
+				"uses": [
+					"Desc_HighSpeedWire_C",
+					"Desc_Cable_C",
+					"Desc_CircuitBoard_C"
+				],
+				"produces": [
+					"Desc_HighSpeedConnector_C"
+				]
+			}
+		},
+		"Desc_ElectromagneticControlRod_C": {
+			"Recipe_Alternate_ElectromagneticControlRod_1_C": {
+				"uses": [
+					"Desc_Stator_C",
+					"Desc_HighSpeedConnector_C"
+				],
+				"produces": [
+					"Desc_ElectromagneticControlRod_C"
+				]
+			},
+			"Recipe_ElectromagneticControlRod_C": {
+				"uses": [
+					"Desc_Stator_C",
+					"Desc_CircuitBoardHighSpeed_C"
+				],
+				"produces": [
+					"Desc_ElectromagneticControlRod_C"
+				]
+			}
+		},
+		"Desc_SteelPlateReinforced_C": {
+			"Recipe_Alternate_EncasedIndustrialBeam_C": {
+				"uses": [
+					"Desc_SteelPipe_C",
+					"Desc_Cement_C"
+				],
+				"produces": [
+					"Desc_SteelPlateReinforced_C"
+				]
+			},
+			"Recipe_EncasedIndustrialBeam_C": {
+				"uses": [
+					"Desc_SteelPlate_C",
+					"Desc_Cement_C"
+				],
+				"produces": [
+					"Desc_SteelPlateReinforced_C"
+				]
+			}
+		},
+		"Desc_Sulfur_C": {},
+		"Desc_CompactedCoal_C": {
+			"Recipe_Alternate_EnrichedCoal_C": {
+				"uses": [
+					"Desc_Coal_C",
+					"Desc_Sulfur_C"
+				],
+				"produces": [
+					"Desc_CompactedCoal_C"
+				]
+			}
+		},
+		"Desc_SpaceElevatorPart_2_C": {
+			"Recipe_Alternate_FlexibleFramework_C": {
+				"uses": [
+					"Desc_ModularFrame_C",
+					"Desc_SteelPlate_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_2_C"
+				]
+			},
+			"Recipe_SpaceElevatorPart_2_C": {
+				"uses": [
+					"Desc_ModularFrame_C",
+					"Desc_SteelPlate_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_2_C"
+				]
+			}
+		},
+		"Desc_GoldIngot_C": {
+			"Recipe_Alternate_PureCateriumIngot_C": {
+				"uses": [
+					"Desc_OreGold_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_GoldIngot_C"
+				]
+			},
+			"Recipe_IngotCaterium_C": {
+				"uses": [
+					"Desc_OreGold_C"
+				],
+				"produces": [
+					"Desc_GoldIngot_C"
+				]
+			}
+		},
+		"Desc_Gunpowder_C": {
+			"Recipe_Alternate_Gunpowder_1_C": {
+				"uses": [
+					"Desc_Sulfur_C",
+					"Desc_CompactedCoal_C"
+				],
+				"produces": [
+					"Desc_Gunpowder_C"
+				]
+			},
+			"Recipe_Gunpowder_C": {
+				"uses": [
+					"Desc_Coal_C",
+					"Desc_Sulfur_C"
+				],
+				"produces": [
+					"Desc_Gunpowder_C"
+				]
+			}
+		},
+		"Desc_AluminumPlate_C": {
+			"Recipe_AluminumSheet_C": {
+				"uses": [
+					"Desc_AluminumIngot_C",
+					"Desc_CopperIngot_C"
+				],
+				"produces": [
+					"Desc_AluminumPlate_C"
+				]
+			}
+		},
+		"Desc_AluminumPlateReinforced_C": {
+			"Recipe_Alternate_HeatSink_1_C": {
+				"uses": [
+					"Desc_AluminumPlate_C",
+					"Desc_CopperSheet_C"
+				],
+				"produces": [
+					"Desc_AluminumPlateReinforced_C"
+				]
+			},
+			"Recipe_HeatSink_C": {
+				"uses": [
+					"Desc_AluminumPlate_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_AluminumPlateReinforced_C"
+				]
+			}
+		},
+		"Desc_ModularFrameHeavy_C": {
+			"Recipe_Alternate_HeavyFlexibleFrame_C": {
+				"uses": [
+					"Desc_ModularFrame_C",
+					"Desc_SteelPlateReinforced_C",
+					"Desc_Rubber_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_ModularFrameHeavy_C"
+				]
+			},
+			"Recipe_Alternate_ModularFrameHeavy_C": {
+				"uses": [
+					"Desc_ModularFrame_C",
+					"Desc_SteelPlateReinforced_C",
+					"Desc_SteelPipe_C",
+					"Desc_Cement_C"
+				],
+				"produces": [
+					"Desc_ModularFrameHeavy_C"
+				]
+			},
+			"Recipe_ModularFrameHeavy_C": {
+				"uses": [
+					"Desc_ModularFrame_C",
+					"Desc_SteelPipe_C",
+					"Desc_SteelPlateReinforced_C",
+					"Desc_IronScrew_C"
+				],
+				"produces": [
+					"Desc_ModularFrameHeavy_C"
+				]
+			}
+		},
+		"Desc_LiquidOil_C": {
+			"Recipe_UnpackageOil_C": {
+				"uses": [
+					"Desc_PackagedOil_C"
+				],
+				"produces": [
+					"Desc_LiquidOil_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_PolymerResin_C": {
+			"Recipe_Alternate_HeavyOilResidue_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_PolymerResin_C"
+				]
+			},
+			"Recipe_Alternate_PolymerResin_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_PolymerResin_C",
+					"Desc_HeavyOilResidue_C"
+				]
+			},
+			"Recipe_LiquidFuel_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_LiquidFuel_C",
+					"Desc_PolymerResin_C"
+				]
+			}
+		},
+		"Desc_SpaceElevatorPart_3_C": {
+			"Recipe_Alternate_HighSpeedWiring_C": {
+				"uses": [
+					"Desc_Stator_C",
+					"Desc_Wire_C",
+					"Desc_HighSpeedConnector_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_3_C"
+				]
+			},
+			"Recipe_SpaceElevatorPart_3_C": {
+				"uses": [
+					"Desc_Stator_C",
+					"Desc_Cable_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_3_C"
+				]
+			}
+		},
+		"Desc_Motor_C": {
+			"Recipe_Alternate_Motor_1_C": {
+				"uses": [
+					"Desc_Rotor_C",
+					"Desc_Stator_C",
+					"Desc_CrystalOscillator_C"
+				],
+				"produces": [
+					"Desc_Motor_C"
+				]
+			},
+			"Recipe_Motor_C": {
+				"uses": [
+					"Desc_Rotor_C",
+					"Desc_Stator_C"
+				],
+				"produces": [
+					"Desc_Motor_C"
+				]
+			}
+		},
+		"Desc_NobeliskExplosive_C": {
+			"Recipe_Alternate_Nobelisk_1_C": {
+				"uses": [
+					"Desc_Gunpowder_C",
+					"Desc_SteelPipe_C",
+					"Desc_CrystalOscillator_C"
+				],
+				"produces": [
+					"Desc_NobeliskExplosive_C"
+				]
+			},
+			"Recipe_Nobelisk_C": {
+				"uses": [
+					"Desc_Gunpowder_C",
+					"Desc_SteelPipe_C"
+				],
+				"produces": [
+					"Desc_NobeliskExplosive_C"
+				]
+			}
+		},
+		"Desc_UraniumCell_C": {
+			"Recipe_Alternate_UraniumCell_1_C": {
+				"uses": [
+					"Desc_UraniumPellet_C",
+					"Desc_Sulfur_C",
+					"Desc_Silica_C",
+					"Desc_HighSpeedWire_C"
+				],
+				"produces": [
+					"Desc_UraniumCell_C"
+				]
+			},
+			"Recipe_UraniumCell_C": {
+				"uses": [
+					"Desc_UraniumPellet_C",
+					"Desc_Cement_C"
+				],
+				"produces": [
+					"Desc_UraniumCell_C"
+				]
+			}
+		},
+		"Desc_NuclearFuelRod_C": {
+			"Recipe_Alternate_NuclearFuelRod_1_C": {
+				"uses": [
+					"Desc_UraniumCell_C",
+					"Desc_ElectromagneticControlRod_C",
+					"Desc_CrystalOscillator_C",
+					"BP_EquipmentDescriptorBeacon_C"
+				],
+				"produces": [
+					"Desc_NuclearFuelRod_C"
+				]
+			},
+			"Recipe_NuclearFuelRod_C": {
+				"uses": [
+					"Desc_UraniumCell_C",
+					"Desc_SteelPlateReinforced_C",
+					"Desc_ElectromagneticControlRod_C"
+				],
+				"produces": [
+					"Desc_NuclearFuelRod_C"
+				]
+			}
+		},
+		"Desc_SpaceElevatorPart_1_C": {
+			"Recipe_Alternate_PlasticSmartPlating_C": {
+				"uses": [
+					"Desc_IronPlateReinforced_C",
+					"Desc_Rotor_C",
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_1_C"
+				]
+			},
+			"Recipe_SpaceElevatorPart_1_C": {
+				"uses": [
+					"Desc_IronPlateReinforced_C",
+					"Desc_Rotor_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_1_C"
+				]
+			}
+		},
+		"Desc_LiquidFuel_C": {
+			"Recipe_LiquidFuel_C": {
+				"uses": [
+					"Desc_LiquidOil_C"
+				],
+				"produces": [
+					"Desc_LiquidFuel_C",
+					"Desc_PolymerResin_C"
+				]
+			},
+			"Recipe_ResidualFuel_C": {
+				"uses": [
+					"Desc_HeavyOilResidue_C"
+				],
+				"produces": [
+					"Desc_LiquidFuel_C"
+				]
+			},
+			"Recipe_UnpackageFuel_C": {
+				"uses": [
+					"Desc_Fuel_C"
+				],
+				"produces": [
+					"Desc_LiquidFuel_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_Fabric_C": {
+			"Recipe_Alternate_PolyesterFabric_C": {
+				"uses": [
+					"Desc_PolymerResin_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_Fabric_C"
+				]
+			},
+			"Recipe_Fabric_C": {
+				"uses": [
+					"Desc_Mycelia_C",
+					"Desc_GenericBiomass_C"
+				],
+				"produces": [
+					"Desc_Fabric_C"
+				]
+			}
+		},
+		"Desc_OreGold_C": {},
+		"Desc_RawQuartz_C": {},
+		"Desc_ComputerSuper_C": {
+			"Recipe_ComputerSuper_C": {
+				"uses": [
+					"Desc_Computer_C",
+					"Desc_CircuitBoardHighSpeed_C",
+					"Desc_HighSpeedConnector_C",
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_ComputerSuper_C"
+				]
+			}
+		},
+		"Desc_ModularFrameLightweight_C": {
+			"Recipe_Alternate_RadioControlUnit_1_C": {
+				"uses": [
+					"Desc_AluminumPlateReinforced_C",
+					"Desc_ComputerSuper_C",
+					"Desc_QuartzCrystal_C"
+				],
+				"produces": [
+					"Desc_ModularFrameLightweight_C"
+				]
+			},
+			"Recipe_RadioControlUnit_C": {
+				"uses": [
+					"Desc_AluminumPlateReinforced_C",
+					"Desc_Rubber_C",
+					"Desc_CrystalOscillator_C",
+					"Desc_Computer_C"
+				],
+				"produces": [
+					"Desc_ModularFrameLightweight_C"
+				]
+			}
+		},
+		"Desc_IronRod_C": {
+			"Recipe_Alternate_SteelRod_C": {
+				"uses": [
+					"Desc_SteelIngot_C"
+				],
+				"produces": [
+					"Desc_IronRod_C"
+				]
+			},
+			"Recipe_IronRod_C": {
+				"uses": [
+					"Desc_IronIngot_C"
+				],
+				"produces": [
+					"Desc_IronRod_C"
+				]
+			}
+		},
+		"Desc_LiquidTurboFuel_C": {
+			"Recipe_Alternate_TurboHeavyFuel_C": {
+				"uses": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_CompactedCoal_C"
+				],
+				"produces": [
+					"Desc_LiquidTurboFuel_C"
+				]
+			},
+			"Recipe_Alternate_Turbofuel_C": {
+				"uses": [
+					"Desc_LiquidFuel_C",
+					"Desc_CompactedCoal_C"
+				],
+				"produces": [
+					"Desc_LiquidTurboFuel_C"
+				]
+			},
+			"Recipe_UnpackageTurboFuel_C": {
+				"uses": [
+					"Desc_TurboFuel_C"
+				],
+				"produces": [
+					"Desc_LiquidTurboFuel_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_MotorLightweight_C": {
+			"Recipe_Alternate_TurboMotor_1_C": {
+				"uses": [
+					"Desc_Motor_C",
+					"Desc_ModularFrameLightweight_C",
+					"Desc_CircuitBoardHighSpeed_C",
+					"Desc_Stator_C"
+				],
+				"produces": [
+					"Desc_MotorLightweight_C"
+				]
+			},
+			"Recipe_MotorTurbo_C": {
+				"uses": [
+					"Desc_AluminumPlateReinforced_C",
+					"Desc_ModularFrameLightweight_C",
+					"Desc_Motor_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_MotorLightweight_C"
+				]
+			}
+		},
+		"Desc_UraniumPellet_C": {
+			"Recipe_UraniumPellet_C": {
+				"uses": [
+					"Desc_OreUranium_C",
+					"Desc_SulfuricAcid_C"
+				],
+				"produces": [
+					"Desc_UraniumPellet_C",
+					"Desc_SulfuricAcid_C"
+				]
+			}
+		},
+		"Desc_OreBauxite_C": {},
+		"Desc_AluminumIngot_C": {
+			"Recipe_IngotAluminum_C": {
+				"uses": [
+					"Desc_AluminumScrap_C",
+					"Desc_Silica_C"
+				],
+				"produces": [
+					"Desc_AluminumIngot_C"
+				]
+			},
+			"Recipe_PureAluminumIngot_C": {
+				"uses": [
+					"Desc_AluminumScrap_C"
+				],
+				"produces": [
+					"Desc_AluminumIngot_C"
+				]
+			}
+		},
+		"Desc_Battery_C": {
+			"Recipe_Battery_C": {
+				"uses": [
+					"Desc_AluminumPlate_C",
+					"Desc_Wire_C",
+					"Desc_Sulfur_C",
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_Battery_C"
+				]
+			}
+		},
+		"Desc_Biofuel_C": {
+			"Recipe_Biofuel_C": {
+				"uses": [
+					"Desc_GenericBiomass_C"
+				],
+				"produces": [
+					"Desc_Biofuel_C"
+				]
+			}
+		},
+		"Desc_HogParts_C": {},
+		"Desc_SpitterParts_C": {},
+		"Desc_Leaves_C": {},
+		"Desc_Mycelia_C": {},
+		"Desc_CartridgeStandard_C": {
+			"Recipe_Cartridge_C": {
+				"uses": [
+					"BP_EquipmentDescriptorBeacon_C",
+					"Desc_SteelPipe_C",
+					"Desc_Gunpowder_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_CartridgeStandard_C"
+				]
+			}
+		},
+		"Desc_FlowerPetals_C": {},
+		"Desc_ColorCartridge_C": {
+			"Recipe_ColorCartridge_C": {
+				"uses": [
+					"Desc_FlowerPetals_C"
+				],
+				"produces": [
+					"Desc_ColorCartridge_C"
+				]
+			}
+		},
+		"Desc_Filter_C": {
+			"Recipe_FilterGasMask_C": {
+				"uses": [
+					"Desc_Coal_C",
+					"Desc_Rubber_C",
+					"Desc_Fabric_C"
+				],
+				"produces": [
+					"Desc_Filter_C"
+				]
+			}
+		},
+		"Desc_HazmatFilter_C": {
+			"Recipe_FilterHazmat_C": {
+				"uses": [
+					"Desc_Filter_C",
+					"Desc_HighSpeedWire_C",
+					"Desc_Rubber_C"
+				],
+				"produces": [
+					"Desc_HazmatFilter_C"
+				]
+			}
+		},
+		"Desc_FluidCanister_C": {
+			"Recipe_FluidCanister_C": {
+				"uses": [
+					"Desc_Plastic_C"
+				],
+				"produces": [
+					"Desc_FluidCanister_C"
+				]
+			},
+			"Recipe_UnpackageBioFuel_C": {
+				"uses": [
+					"Desc_PackagedBiofuel_C"
+				],
+				"produces": [
+					"Desc_LiquidBiofuel_C",
+					"Desc_FluidCanister_C"
+				]
+			},
+			"Recipe_UnpackageFuel_C": {
+				"uses": [
+					"Desc_Fuel_C"
+				],
+				"produces": [
+					"Desc_LiquidFuel_C",
+					"Desc_FluidCanister_C"
+				]
+			},
+			"Recipe_UnpackageOilResidue_C": {
+				"uses": [
+					"Desc_PackagedOilResidue_C"
+				],
+				"produces": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_FluidCanister_C"
+				]
+			},
+			"Recipe_UnpackageOil_C": {
+				"uses": [
+					"Desc_PackagedOil_C"
+				],
+				"produces": [
+					"Desc_LiquidOil_C",
+					"Desc_FluidCanister_C"
+				]
+			},
+			"Recipe_UnpackageTurboFuel_C": {
+				"uses": [
+					"Desc_TurboFuel_C"
+				],
+				"produces": [
+					"Desc_LiquidTurboFuel_C",
+					"Desc_FluidCanister_C"
+				]
+			},
+			"Recipe_UnpackageWater_C": {
+				"uses": [
+					"Desc_PackagedWater_C"
+				],
+				"produces": [
+					"Desc_Water_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_LiquidBiofuel_C": {
+			"Recipe_LiquidBiofuel_C": {
+				"uses": [
+					"Desc_Biofuel_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_LiquidBiofuel_C"
+				]
+			},
+			"Recipe_UnpackageBioFuel_C": {
+				"uses": [
+					"Desc_PackagedBiofuel_C"
+				],
+				"produces": [
+					"Desc_LiquidBiofuel_C",
+					"Desc_FluidCanister_C"
+				]
+			}
+		},
+		"Desc_PackagedBiofuel_C": {
+			"Recipe_PackagedBiofuel_C": {
+				"uses": [
+					"Desc_LiquidBiofuel_C",
+					"Desc_FluidCanister_C"
+				],
+				"produces": [
+					"Desc_PackagedBiofuel_C"
+				]
+			}
+		},
+		"Desc_PackagedOil_C": {
+			"Recipe_PackagedCrudeOil_C": {
+				"uses": [
+					"Desc_LiquidOil_C",
+					"Desc_FluidCanister_C"
+				],
+				"produces": [
+					"Desc_PackagedOil_C"
+				]
+			}
+		},
+		"Desc_PackagedOilResidue_C": {
+			"Recipe_PackagedOilResidue_C": {
+				"uses": [
+					"Desc_HeavyOilResidue_C",
+					"Desc_FluidCanister_C"
+				],
+				"produces": [
+					"Desc_PackagedOilResidue_C"
+				]
+			}
+		},
+		"Desc_TurboFuel_C": {
+			"Recipe_PackagedTurboFuel_C": {
+				"uses": [
+					"Desc_LiquidTurboFuel_C",
+					"Desc_FluidCanister_C"
+				],
+				"produces": [
+					"Desc_TurboFuel_C"
+				]
+			}
+		},
+		"Desc_Crystal_C": {},
+		"Desc_CrystalShard_C": {
+			"Recipe_PowerCrystalShard_1_C": {
+				"uses": [
+					"Desc_Crystal_C"
+				],
+				"produces": [
+					"Desc_CrystalShard_C"
+				]
+			},
+			"Recipe_PowerCrystalShard_2_C": {
+				"uses": [
+					"Desc_Crystal_mk2_C"
+				],
+				"produces": [
+					"Desc_CrystalShard_C"
+				]
+			},
+			"Recipe_PowerCrystalShard_3_C": {
+				"uses": [
+					"Desc_Crystal_mk3_C"
+				],
+				"produces": [
+					"Desc_CrystalShard_C"
+				]
+			}
+		},
+		"Desc_Crystal_mk2_C": {},
+		"Desc_Crystal_mk3_C": {},
+		"Desc_SpaceElevatorPart_4_C": {
+			"Recipe_SpaceElevatorPart_4_C": {
+				"uses": [
+					"Desc_Motor_C",
+					"Desc_Rubber_C",
+					"Desc_SpaceElevatorPart_1_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_4_C"
+				]
+			}
+		},
+		"Desc_SpaceElevatorPart_5_C": {
+			"Recipe_SpaceElevatorPart_5_C": {
+				"uses": [
+					"Desc_SpaceElevatorPart_3_C",
+					"Desc_CircuitBoard_C",
+					"Desc_ModularFrameHeavy_C",
+					"Desc_Computer_C"
+				],
+				"produces": [
+					"Desc_SpaceElevatorPart_5_C"
+				]
+			}
+		},
+		"Desc_SpikedRebar_C": {
+			"Recipe_SpikedRebar_C": {
+				"uses": [
+					"Desc_IronRod_C"
+				],
+				"produces": [
+					"Desc_SpikedRebar_C"
+				]
+			}
+		},
+		"Desc_SulfuricAcid_C": {
+			"Recipe_SulfuricAcid_C": {
+				"uses": [
+					"Desc_Sulfur_C",
+					"Desc_Water_C"
+				],
+				"produces": [
+					"Desc_SulfuricAcid_C"
+				]
+			},
+			"Recipe_UraniumPellet_C": {
+				"uses": [
+					"Desc_OreUranium_C",
+					"Desc_SulfuricAcid_C"
+				],
+				"produces": [
+					"Desc_UraniumPellet_C",
+					"Desc_SulfuricAcid_C"
+				]
+			}
+		},
+		"Desc_OreUranium_C": {}
+	}
+}

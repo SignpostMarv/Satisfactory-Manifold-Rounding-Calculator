@@ -1,8 +1,13 @@
 {
     "raw_resources": [
+		"Desc_Water_C",
+		"Desc_Crystal_C",
+		"Desc_Crystal_mk2_C",
+		"Desc_Crystal_mk3_C",
         "Desc_OreIron_C",
-        "Desc_Stone_C",
-        "Desc_OreCopper_C",
+		"Desc_Stone_C",
+		"Desc_OreCopper_C",
+		"Desc_Coal_C",
         "Desc_Sulfur_C",
         "Desc_OreGold_C",
         "Desc_RawQuartz_C",

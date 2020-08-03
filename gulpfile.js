@@ -181,6 +181,72 @@ async function js_load(cb) {
 	cb();
 };
 
+async function js_data_parse_cjs(cb) {
+	const bundle = await rollup.rollup({
+		input: './src/scripts/data-parser.cjs.ts',
+		plugins: [
+			rollupPlugins.nodeResolve(),
+			rollupPlugins.jsonResolve(),
+			rollupPlugins.typescript({
+				tsconfig: './tsconfig.json',
+				outDir: './src/scripts/',
+			}),
+			rollupPlugins.minifyHtml(),
+		],
+	});
+
+	await bundle.write({
+		sourcemap: false,
+		format: 'cjs',
+		dir: './src/scripts/',
+		exports: 'named',
+	});
+
+	cb();
+};
+
+async function js_data_parse(cb) {
+	const bundle = await rollup.rollup({
+		input: './src/scripts/data-parser.ts',
+		plugins: [
+			rollupPlugins.nodeResolve(),
+			rollupPlugins.jsonResolve(),
+			rollupPlugins.typescript({
+				tsconfig: './tsconfig.json',
+				outDir: './src/scripts/',
+			}),
+			rollupPlugins.minifyHtml(),
+		],
+	});
+
+	await bundle.write({
+		sourcemap: false,
+		format: 'es',
+		dir: './src/scripts/',
+	});
+
+	cb();
+};
+
+async function graph_datasource(cb) {
+	const maybe = require(
+		'./third-party/satisfactory-tools/data/data.json'
+	);
+
+	const {CompileReferences} = require(
+		'./src/scripts/data-parser.cjs.js'
+	);
+
+	fs.writeFileSync(
+		'./src/graphed.json',
+		JSON.stringify(
+			CompileReferences(maybe),
+			null,
+			'\t'
+		)
+	);
+};
+
 function task_uglify() {
 	return src('./tmp/scripts/**/*.js').pipe(
 		newer('./src/scripts/')
@@ -202,10 +268,15 @@ function task_postcss() {
 exports.automate_listed = automate_listed;
 exports.unlisted = unlisted;
 exports.js_load = js_load;
+exports.js_data_parse_cjs = js_data_parse_cjs;
+exports.js_data_parse = js_data_parse;
+exports.graph_datasource = graph_datasource;
 exports.uglify = task_uglify;
 exports.postcss = task_postcss;
 
 exports.default = series(...[
+	js_data_parse_cjs,
+	graph_datasource,
 	parallel(...[
 		js_load,
 		task_postcss,
